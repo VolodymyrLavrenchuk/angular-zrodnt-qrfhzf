@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "name": "Quote.docx",
+    "size": 25999,
+    "createdby": "John Smith",
+    "createdate": "2020-05-13T13:08:21"
+  },
+  {
+    "id": 2,
+    "name": "Client data.eml",
+    "size": 98745,
+    "createdby": "August Winner",
+    "createdate": "2020-05-12T18:07:21"
+  },
+  {
+    "id": 3,
+    "name": "Premium calculations.xlsx",
+    "size": 53679,
+    "createdby": "John Smith",
+    "createdate": "2020-05-11T17:08:21"
+  },
+  {
+    "id": 4,
+    "name": "Policy draft AA2020/67489.docx",
+    "size": 2534045,
+    "createdby": "Jane Dow",
+    "createdate": "2020-05-19T11:08:21"
+  },
+  {
+    "id": 5,
+    "name": "Policy draft AA2020/67489 v2.docx",
+    "size": 2784045,
+    "createdby": "Jane Dow",
+    "createdate": "2020-05-25T15:27:21"
+  },
+  {
+    "id": 6,
+    "name": "Appendix A.docx",
+    "size": 75679,
+    "createdby": "John Smith",
+    "createdate": "2020-05-22T10:01:42"
+  }  
+]

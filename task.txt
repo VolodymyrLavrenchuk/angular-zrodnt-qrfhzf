@@ -1,0 +1,14 @@
+MVP1
+1) Implement Document class (models/Document.ts) basing on assets/documents.json data
+2) Implement DocumentService (services/document.service.ts) to get data from assets/documents.json using HttpClient;
+3) Implement DocumentListComponent (components/document-list/*), read list of files via DocumentService and show as a read-only table or list of Documents when "Load Documents" button is clicked;
+Display only the following properties: id, name, createddate.
+Name property should be a clickable link that routes to /document/:id.
+Note: Routes already set up in app-routing.modules.ts.
+4) Implement DocumentDataComponent (component/document-data/*) to read and display all properties of a single document data by ID using /document/:id route.
+Go Back button should return to home page.
+
+MVP2
+6) Implement pipes/file-size.pipe.ts to convert bytes of document sizes into largest possible unit;
+6a) Use Pipe on DocumentListComponent and DocumentDataComponent 
+7) Fix location of "Load Documents" button - there should be no overlap with the Title
