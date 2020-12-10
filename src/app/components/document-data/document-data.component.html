@@ -1,13 +1,11 @@
 <h2>File Details:</h2>
 
-{{document}}
+ <ul *ngIf="document">
+  <li>{{document.id}}</li>
+  <li>{{document.name}}</li>
+  <li>{{document.size | fileSize}}</li>
+  <li>{{document.createdby}}</li>
+  <li>{{document.createdate}}</li>
+</ul>
 
-<!-- <ul>
-  <li>id: {{document.id}}</li>
-  <li>name: {{document.name}}</li>
-  <li>size: {{document.size}}</li>
-  <li>createdby: {{document.createdby}}</li>
-  <li>createdate: {{document.createdate}}</li>
-</ul> -->
-
-<a class="button back-button" href="/documents">Go Back</a>
+<a class="button back-button" (click)="goBack()">Go Back</a>

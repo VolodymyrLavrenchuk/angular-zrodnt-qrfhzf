@@ -40,5 +40,12 @@
     "size": 75679,
     "createdby": "John Smith",
     "createdate": "2020-05-22T10:01:42"
-  }  
+  },
+  {
+    "id": 7,
+    "name": "Appendix A.docx",
+    "size": 1023,
+    "createdby": "John Smith",
+    "createdate": "2020-05-22T10:01:42"
+  }
 ]

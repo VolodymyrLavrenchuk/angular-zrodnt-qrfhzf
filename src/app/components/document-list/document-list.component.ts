@@ -1,7 +1,8 @@
 import { Component, OnInit } from "@angular/core";
 import { DocumentService } from "../../services/document.service";
-import { FileSizePipe } from "../../pipes/file-size.pipe";
+// import { FileSizePipe } from "../../pipes/file-size.pipe";
 import { take } from 'rxjs/operators';
+import { Document } from "../../models/document";
 
 @Component({
   selector: "app-document-list",
@@ -17,14 +18,8 @@ export class DocumentListComponent implements OnInit {
   }
 
   load(){
-    this.docService
-      .getDocuments()
-      .pipe(
-        take(1)
-      )
-      .subscribe((data: any) => {
-        this.documents = data
-      }
-      );    
+    this.docService.getDocuments()
+      .pipe(take(1))
+      .subscribe((data: Document[]) => this.documents = data);
   }
 }

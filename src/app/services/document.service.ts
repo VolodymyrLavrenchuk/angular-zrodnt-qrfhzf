@@ -1,7 +1,7 @@
 import { Injectable } from "@angular/core";
-import { Observable, of } from "rxjs";
+import { Observable } from "rxjs";
 import { HttpClient } from "@angular/common/http";
-import { filter, map, tap, catchError } from "rxjs/operators";
+import { map } from "rxjs/operators";
 
 import { Document } from "../models/document";
 
@@ -14,18 +14,9 @@ export class DocumentService {
   }
 
   getDocument(id: number): Observable<Document> {
-    return this.getDocuments().pipe(
-      tap(data => console.log(data)),
-      tap(data => console.log(id)),
-      filter((data: any) => data.id == id),
-      tap(data => console.log("after filter")),
-      tap(data => console.log(data)),
-      map(res => res),
-      tap(data => console.log(data)),
-      catchError(err => {
-        console.error(err);
-        return of("");
-      })
-    );
+    return this.getDocuments()
+        .pipe(
+            map((docs: Document[]) => docs.find(d => d.id === id))
+        ) as Observable<Document>;
   }
 }

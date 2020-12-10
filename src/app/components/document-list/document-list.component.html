@@ -4,7 +4,7 @@
 <ul *ngFor="let document of documents">
   <li>id: {{document.id}}</li>
   <li> <a href="/documents/{{document.id}}">name: {{document.name}}</a></li>
-  <li>size: {{document.size}}</li>
+  <li>size: {{document.size | fileSize}}</li>
   <li>createdby: {{document.createdby}}</li>
   <li>createdate: {{document.createdate}}</li>
 </ul>
